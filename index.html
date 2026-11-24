@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Zenith Xenon — elixir stats cli</title><link rel="stylesheet" href="style.css"></head><body>
+<header><h1>◈ zenith xenon</h1><nav class="lang"><button data-lang="en" class="on">EN</button><button data-lang="de">DE</button></nav></header>
+<main><div class="sd">
+<section class="card"><h2 data-i="about">about</h2><p data-i="abouttext"></p>
+<p class="run"><code data-i="runlabel"></code> <code class="cmd">elixir stats.exs</code></p>
+<h2 data-i="source">source — stats.exs</h2><pre class="code">d = [12.5, 7.0, 23.75, 4.5, 18.0, 9.25, 31.0]
+sum = Enum.sum(d)
+IO.puts("count : #{length(d)}")
+IO.puts(:io.format("sum   : ~.2f~n", [sum]))
+IO.puts(:io.format("mean  : ~.2f~n", [sum / length(d)]))
+IO.puts(:io.format("min   : ~.2f~n", [Enum.min(d)]))
+IO.puts(:io.format("max   : ~.2f~n", [Enum.max(d)]))</pre></section>
+<section class="card"><h2 data-i="output">sample output</h2><pre class="out">count : 7
+sum   : 106.00
+mean  : 15.14
+min   : 4.50
+max   : 31.00</pre>
+<h2 data-i="why">why elixir?</h2><p data-i="whytext"></p>
+<h2 data-i="features">features</h2><ul id="flist"></ul></section>
+</div></main><script src="app.js"></script></body></html>
